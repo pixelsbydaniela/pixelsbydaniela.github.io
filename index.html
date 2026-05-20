@@ -33,7 +33,7 @@
     .hero{position:relative;height:calc(100vh - 68px);min-height:520px;display:flex;align-items:center;justify-content:center;overflow:hidden}
     .hero-bg{position:absolute;inset:0;background:url('Hero-shot.jpg') center/cover no-repeat}
     /* ── REPLACE hero-bg with your photo: background:url('images/hero.jpg') center/cover no-repeat ── */
-    .hero-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.32)}
+    .hero-bg img{width:100%;height:100%;object-fit:contain;object-position:center top;filter:brightness(.32)}
     .hero-content{position:relative;text-align:center;padding:0 24px}
     .eyebrow{font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;font-weight:400}
     .hero-title{font-family:var(--font-d);font-size:clamp(52px,10vw,104px);font-weight:300;line-height:1;color:var(--cream);margin-bottom:22px;letter-spacing:.02em}
