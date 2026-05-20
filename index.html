@@ -705,7 +705,13 @@
           <option>Something else</option>
         </select>
       </div>
-      <div class="ff"><label>Date (if applicable)</label><input type="text" placeholder="DD / MM / YYYY"></div>
+      <div class="ff">
+        <label>Date (if applicable)</label>
+        <input type="text" 
+               placeholder="DD / MM / YYYY" 
+               maxlength="10" 
+               oninput="this.value = this.value.replace(/[^0-8]/g, '').replace(/^(\d{2})(\d)/, '$1/$2').replace(/^(\d{2})\/(\d{2})(\d)/, '$1/$2/$3')">
+      </div>
       <div class="ff"><label>Tell me about your project</label><textarea placeholder="A bit about what you're planning..."></textarea></div>
       <button class="btn btn-gold" style="width:100%;text-align:center">Send Enquiry</button>
       <p class="form-note">By submitting you agree to our <a onclick="goTo('terms')">Terms &amp; Conditions</a></p>
