@@ -966,5 +966,124 @@
   window.addEventListener('load',()=>{const h=window.location.hash.replace('#','');if(h&&PAGES.includes(h))goTo(h)});
   window.addEventListener('popstate',()=>{const h=window.location.hash.replace('#','');if(h&&PAGES.includes(h))goTo(h);else goTo('home')});
 </script>
+    <style>
+  /* Dark backdrop layout blur */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(13, 11, 9, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 24px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+  }
+
+  /* Active popup fade-in state */
+  .modal-overlay.modal-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Premium minimalist modal window card */
+  .modal-content {
+    background: #14110e;
+    border: 1px solid var(--border);
+    max-width: 480px;
+    width: 100%;
+    padding: 40px;
+    position: relative;
+    transform: translateY(20px);
+    transition: transform 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+  }
+
+  .modal-overlay.modal-open .modal-content {
+    transform: translateY(0);
+  }
+
+  /* Close text icon styling */
+  .modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: none;
+    border: none;
+    color: var(--cream2);
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  .modal-close:hover {
+    color: var(--gold);
+  }
+</style>
+
+<script>
+  // Open window controller
+  function openArchiveModal() {
+    const targetModal = document.getElementById('archive-modal');
+    if (targetModal) {
+      targetModal.classList.add('modal-open');
+      document.body.style.overflow = 'hidden'; // Prevents background body scrolling
+    }
+  }
+
+  // Close window controller
+  function closeArchiveModal() {
+    const targetModal = document.getElementById('archive-modal');
+    if (targetModal) {
+      targetModal.classList.remove('modal-open');
+      document.body.style.overflow = ''; // Restores default view navigation
+    }
+  }
+
+  // Backdrop backdrop auto-click dismiss handler
+  function closeArchiveModalExternal(event) {
+    if (event.target.id === 'archive-modal') {
+      closeArchiveModal();
+    }
+  }
+</script>
+    <div id="archive-modal" class="modal-overlay" onclick="closeArchiveModalExternal(event)">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeArchiveModal()">✕</button>
+    
+    <p class="sec-label">The Archive</p>
+    <h2>Join the <em>Waiting List</em></h2>
+    <div class="divider" style="margin-bottom: 24px;"></div>
+    <p style="font-size: 13.5px; color: var(--cream2); margin-bottom: 28px; line-height: 1.6;">
+      Slots are highly limited for our initial roll-out phase. Drop your details below to secure priority booking access the moment our vintage kits drop.
+    </p>
+
+    <form action="https://api.web3forms.com/submit" method="POST" class="cf" style="padding:0; background:transparent;">
+      <input type="hidden" name="access_key" value="5e903f3c-acc4-40eb-931a-c574ceeafec8">
+      <input type="hidden" name="redirect" value="https://www.pixelsbydaniela.com">
+      <input type="hidden" name="subject" value="New Archive Waiting List Sign-Up">
+      <input type="checkbox" name="botcheck" style="display: none;">
+
+      <div class="ff">
+        <label>Your Name</label>
+        <input type="text" name="Full Name" placeholder="Jane Smith" required>
+      </div>
+      
+      <div class="ff">
+        <label>Email Address</label>
+        <input type="email" name="Email" placeholder="jane@example.com" required>
+      </div>
+
+      <div class="ff">
+        <label>When is your event? (Optional)</label>
+        <input type="text" name="Estimated Event Date" placeholder="e.g. October 2026">
+      </div>
+      
+      <button type="submit" class="btn btn-gold" style="width:100%; text-align:center; margin-top:12px;">Submit Application</button>
+    </form>
+  </div>
+</div>
 </body>
 </html>
