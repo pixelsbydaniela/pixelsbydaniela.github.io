@@ -3,33 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Cape Town photographer specialising in weddings, portraits, real estate and lifestyle. Fully edited galleries, fast turnaround. Based in South Africa, available to travel.">
+  <meta name="description" content="Cape Town photographer & videographer specialising in weddings, portraits, real estate and lifestyle. Also home to The Archive — vintage camcorder rentals delivered via Pargo.">
   <title>Pixels by Daniela | Photographer & Videographer, Cape Town</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --bg: #0d0b09;
-      --bg2: #131109;
-      --cream: #f0ead8;
-      --cream2: #c0b49a;
-      --gold: #b8935a;
-      --gold2: #d4a96a;
-      --border: rgba(200,191,168,0.1);
-      --font-d: 'Cormorant Garamond', Georgia, serif;
-      --font-b: 'DM Sans', -apple-system, sans-serif;
-      --ease: cubic-bezier(0.25,0.1,0.25,1);
-    }
+    :root{--bg:#0d0b09;--bg2:#131109;--cream:#f0ead8;--cream2:#c0b49a;--gold:#b8935a;--gold2:#d4a96a;--border:rgba(200,191,168,0.1);--font-d:'Cormorant Garamond',Georgia,serif;--font-b:'DM Sans',-apple-system,sans-serif;--ease:cubic-bezier(0.25,0.1,0.25,1)}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{background:var(--bg);color:var(--cream);font-family:var(--font-b);font-size:15px;line-height:1.7;min-height:100vh;overflow-x:hidden}
     body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.03;pointer-events:none;z-index:9999;mix-blend-mode:overlay}
 
     /* NAV */
-    nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:0 40px;height:68px;display:flex;align-items:center;justify-content:space-between;background:rgba(13,11,9,.94);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:border-color .3s}
-    .nav-logo{cursor:pointer;display:flex;align-items:center}
-    .nav-logo-text{font-family:var(--font-d);font-size:19px;font-weight:300;letter-spacing:.06em;color:var(--cream)}
+    nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:0 40px;height:68px;display:flex;align-items:center;justify-content:space-between;background:rgba(13,11,9,.94);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    .nav-logo{cursor:pointer}.nav-logo-text{font-family:var(--font-d);font-size:19px;font-weight:300;letter-spacing:.06em;color:var(--cream)}
     .nav-links{display:flex;gap:32px;list-style:none;align-items:center}
     .nav-links a{font-size:11.5px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--cream2);text-decoration:none;transition:color .2s;cursor:pointer;padding-bottom:2px}
     .nav-links a:hover,.nav-links a.active{color:var(--cream)}
@@ -37,8 +25,8 @@
     .nav-archive{background:transparent;border:1px solid rgba(184,147,90,.5);color:var(--gold)!important;padding:5px 16px;border-radius:1px;transition:background .2s,color .2s!important}
     .nav-archive:hover{background:var(--gold)!important;color:var(--bg)!important;border-color:var(--gold)}
     .nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
-    .nav-toggle span{display:block;width:22px;height:1.5px;background:var(--cream);transition:.3s var(--ease)}
-    .mobile-menu{display:none;position:fixed;inset:68px 0 0;background:var(--bg);z-index:199;padding:40px 32px;flex-direction:column;gap:0;overflow-y:auto}
+    .nav-toggle span{display:block;width:22px;height:1.5px;background:var(--cream);transition:.3s}
+    .mobile-menu{display:none;position:fixed;inset:68px 0 0;background:var(--bg);z-index:199;padding:40px 32px;flex-direction:column;overflow-y:auto}
     .mobile-menu.open{display:flex}
     .mobile-menu a{font-family:var(--font-d);font-size:30px;font-weight:300;color:var(--cream);text-decoration:none;cursor:pointer;border-bottom:1px solid var(--border);padding:22px 0}
 
@@ -69,14 +57,13 @@
 
     /* LAYOUT */
     .section{padding:88px 40px;max-width:1200px;margin:0 auto}
-    .section-sm{padding:60px 40px;max-width:1200px;margin:0 auto}
     .sec-label{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;font-weight:400}
     .sec-title{font-family:var(--font-d);font-size:clamp(32px,4.5vw,54px);font-weight:300;color:var(--cream);line-height:1.1;margin-bottom:18px}
     .sec-title em{font-style:italic;color:var(--cream2)}
     .sec-body{font-size:14.5px;font-weight:300;color:var(--cream2);max-width:520px;line-height:1.85}
     .divider{width:52px;height:1px;background:var(--gold);margin:22px 0}
 
-    /* PORTFOLIO GRID */
+    /* GRID */
     .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
     .pgrid-4{grid-template-columns:repeat(4,1fr)}
     .gi{aspect-ratio:3/4;overflow:hidden;cursor:pointer;position:relative;background:#181410}
@@ -90,7 +77,7 @@
     .ph{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#181410,#231e14)}
     .ph span{font-size:9.5px;letter-spacing:.22em;color:rgba(200,191,168,.18);text-transform:uppercase}
 
-    /* SERVICES GRID */
+    /* SERVICES */
     .sgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border)}
     .sc{background:var(--bg);padding:44px;transition:background .3s}
     .sc:hover{background:var(--bg2)}
@@ -108,7 +95,6 @@
     /* ABOUT */
     .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:88px;align-items:center;padding:88px 40px;max-width:1100px;margin:0 auto}
     .about-img{aspect-ratio:3/4;background:#181410;overflow:hidden}
-    .about-img .ph{height:100%;min-height:450px}
     .about-text h2{font-family:var(--font-d);font-size:clamp(34px,4vw,50px);font-weight:300;color:var(--cream);margin-bottom:22px;line-height:1.1}
     .about-text h2 em{font-style:italic;color:var(--cream2)}
     .about-text p{font-size:14.5px;font-weight:300;color:var(--cream2);line-height:1.88;margin-bottom:16px}
@@ -139,36 +125,46 @@
     /* TEXT PAGES */
     .tp{max-width:780px;margin:0 auto;padding:72px 40px 100px}
     .tp h1{font-family:var(--font-d);font-size:clamp(38px,5.5vw,58px);font-weight:300;color:var(--cream);margin-bottom:6px}
-    .tp .pmeta{font-size:11.5px;color:var(--cream2);letter-spacing:.08em;margin-bottom:44px;padding-bottom:44px;border-bottom:1px solid var(--border)}
+    .tp h1 em{font-style:italic}
+    .pmeta{font-size:11.5px;color:var(--cream2);letter-spacing:.08em;margin-bottom:44px;padding-bottom:44px;border-bottom:1px solid var(--border)}
+
+    /* FAQ TABS */
+    .faq-tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:36px}
+    .faq-tab{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--cream2);padding:12px 24px 12px 0;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .2s,border-color .2s;background:none;border-top:none;border-left:none;border-right:none;font-family:var(--font-b)}
+    .faq-tab.active{color:var(--cream);border-bottom-color:var(--gold)}
+    .faq-panel{display:none}
+    .faq-panel.active{display:block}
     .faq-item{border-bottom:1px solid var(--border);padding:20px 0;cursor:pointer}
     .faq-q{display:flex;justify-content:space-between;align-items:center;gap:20px;font-family:var(--font-d);font-size:18px;font-weight:400;color:var(--cream);line-height:1.3}
     .faq-ic{width:20px;height:20px;flex-shrink:0;color:var(--gold);font-size:20px;line-height:20px;text-align:center;transition:transform .28s}
     .faq-item.open .faq-ic{transform:rotate(45deg)}
     .faq-a{display:none;font-size:13.5px;font-weight:300;color:var(--cream2);line-height:1.82;padding:14px 40px 4px 0}
     .faq-item.open .faq-a{display:block}
+    .faq-section-label{font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin:32px 0 10px;font-weight:400}
+
+    /* T&C / RENTAL */
     .ts{margin-bottom:36px}
     .ts h2{font-family:var(--font-d);font-size:21px;font-weight:400;color:var(--cream);margin-bottom:12px}
     .ts p,.ts li{font-size:13.5px;font-weight:300;color:var(--cream2);line-height:1.85;margin-bottom:9px}
     .ts ul{padding-left:18px}
     .hbox{background:rgba(184,147,90,.05);border:1px solid rgba(184,147,90,.18);padding:18px 22px;margin:18px 0;font-size:13px;color:var(--cream2);line-height:1.82}
     .hbox strong{color:var(--gold);font-weight:500}
-
-    /* CAREERS */
-    .cc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);margin:36px 0}
-    .cc{background:var(--bg);padding:38px}
-    .cc-tag{font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;display:block}
-    .cc h3{font-family:var(--font-d);font-size:22px;font-weight:400;color:var(--cream);margin-bottom:10px}
-    .cc p{font-size:13px;font-weight:300;color:var(--cream2);line-height:1.75;margin-bottom:18px}
+    .info-box{background:rgba(255,255,255,.02);border:1px solid var(--border);padding:28px 32px}
 
     /* ARCHIVE */
     .arch-hero{min-height:55vh;background:linear-gradient(160deg,#0d0b09 0%,#171108 100%);display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding:80px 32px}
     .arch-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(184,147,90,.055) 0%,transparent 68%)}
     .arch-badge{font-size:9.5px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(184,147,90,.28);padding:5px 16px;margin-bottom:26px;display:inline-block}
-    .hiw{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;padding:72px 40px 0;max-width:960px;margin:0 auto}
+    .hiw{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;padding:72px 40px;max-width:960px;margin:0 auto}
     .step{text-align:center}
     .step-n{font-family:var(--font-d);font-size:50px;font-weight:300;color:rgba(184,147,90,.12);line-height:1;margin-bottom:14px}
     .step h4{font-family:var(--font-d);font-size:18px;font-weight:400;color:var(--cream);margin-bottom:9px}
     .step p{font-size:13px;font-weight:300;color:var(--cream2);line-height:1.75}
+    .kit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);margin:28px 0}
+    .kit-card{background:var(--bg);padding:36px}
+    .kit-card h3{font-family:var(--font-d);font-size:22px;font-weight:400;color:var(--cream);margin-bottom:8px}
+    .kit-card .kit-tag{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:block}
+    .kit-card p{font-size:13px;font-weight:300;color:var(--cream2);line-height:1.75;margin-bottom:16px}
 
     /* FILTERS */
     .filters{padding:0 40px 36px;display:flex;gap:10px;flex-wrap:wrap}
@@ -176,10 +172,25 @@
     .fb:hover,.fb.active{background:var(--cream);color:var(--bg);border-color:var(--cream)}
     .wi.hidden{display:none}
 
-    /* ARCHIVE COMING SOON */
-    .cs-card{background:rgba(255,255,255,.02);border:1px solid var(--border);padding:44px;text-align:center;max-width:460px;margin:0 auto 28px}
-    .cs-card h3{font-family:var(--font-d);font-size:24px;font-weight:300;color:var(--cream);margin-bottom:14px}
-    .cs-card p{font-size:13.5px;font-weight:300;color:var(--cream2);line-height:1.8;margin-bottom:22px}
+    /* SERVICE DETAIL */
+    .sd{display:grid;grid-template-columns:1.15fr 1fr;gap:72px;align-items:center;margin-bottom:88px;padding:0 40px;max-width:1200px;margin-left:auto;margin-right:auto}
+    .sd.rev{grid-template-columns:1fr 1.15fr}
+    .sd-img{aspect-ratio:3/4;overflow:hidden;background:#181410}
+    .sd-img .ph{height:100%}
+    .sd h2{font-family:var(--font-d);font-size:clamp(26px,3vw,40px);font-weight:300;color:var(--cream);margin-bottom:18px;line-height:1.15}
+    .sd h2 em{font-style:italic}
+    .sd p{font-size:13.5px;font-weight:300;color:var(--cream2);line-height:1.85;margin-bottom:22px}
+    .sd-from{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:26px;display:block}
+    .sd-from small{font-size:11px;color:var(--cream2);margin-left:8px;text-transform:none;letter-spacing:0}
+
+    /* DARK BAND */
+    .dark-band{background:#09070503;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:72px 40px;text-align:center}
+    .tag{display:inline-block;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;border:1px solid rgba(184,147,90,.28);color:var(--gold);padding:4px 12px;margin-bottom:18px}
+    .bullet-list{list-style:none;display:flex;flex-direction:column;gap:7px}
+    .bullet-list li{font-size:13px;color:var(--cream2);font-weight:300;padding-left:16px;position:relative}
+    .bullet-list li::before{content:'—';position:absolute;left:0;color:var(--gold)}
+    .tc{text-align:center}
+    .mt-24{margin-top:24px}.mt-36{margin-top:36px}.mt-48{margin-top:48px}
 
     /* FOOTER */
     footer{background:#090806;border-top:1px solid var(--border);padding:60px 40px 28px}
@@ -192,25 +203,10 @@
     .fc ul a:hover{color:var(--cream)}
     .fb-btm{max-width:1200px;margin:0 auto;padding-top:26px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
     .fb-copy{font-size:11.5px;font-weight:300;color:rgba(200,191,168,.35)}
-    .fb-social a{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(200,191,168,.45);text-decoration:none;transition:color .2s}
-    .fb-social a:hover{color:var(--cream)}
-
-    /* DARK BAND */
-    .dark-band{background:#09070503;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:72px 40px;text-align:center}
-
-    /* HELPERS */
-    .tc{text-align:center}
-    .mt-8{margin-top:8px}
-    .mt-16{margin-top:16px}
-    .mt-24{margin-top:24px}
-    .mt-36{margin-top:36px}
-    .mt-48{margin-top:48px}
-    .mt-64{margin-top:64px}
-    .tag{display:inline-block;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;border:1px solid rgba(184,147,90,.28);color:var(--gold);padding:4px 12px;margin-bottom:18px}
-    .bullet-list{list-style:none;display:flex;flex-direction:column;gap:7px}
-    .bullet-list li{font-size:13px;color:var(--cream2);font-weight:300;padding-left:16px;position:relative}
-    .bullet-list li::before{content:'—';position:absolute;left:0;color:var(--gold)}
-    .info-box{background:rgba(255,255,255,.02);border:1px solid var(--border);padding:28px 32px}
+    .socials{display:flex;gap:20px;align-items:center}
+    .socials a{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid var(--border);color:var(--cream2);text-decoration:none;transition:all .2s;border-radius:50%}
+    .socials a:hover{border-color:var(--gold);color:var(--gold)}
+    .socials a svg{width:15px;height:15px;fill:currentColor}
 
     /* RESPONSIVE */
     @media(max-width:960px){
@@ -222,15 +218,16 @@
       .sgrid{grid-template-columns:1fr}
       .about-grid{grid-template-columns:1fr;gap:48px;padding:60px 24px}
       .contact-wrap{grid-template-columns:1fr;gap:48px;padding:60px 24px}
-      .hiw{grid-template-columns:1fr;gap:40px;padding:60px 24px 0}
-      .cc-grid{grid-template-columns:1fr}
+      .hiw{grid-template-columns:1fr;gap:40px;padding:60px 24px}
+      .kit-grid{grid-template-columns:1fr}
       .fg{grid-template-columns:1fr 1fr;gap:36px}
-      .section,.section-sm{padding:64px 24px}
+      .section{padding:64px 24px}
       .ph-wrap{padding:56px 24px 40px}
       .tp{padding:56px 24px 80px}
       .fr{grid-template-columns:1fr}
       .sc{padding:30px 22px}
       .filters{padding:0 24px 28px}
+      .sd,.sd.rev{grid-template-columns:1fr;gap:40px;padding:0 24px;margin-bottom:64px}
     }
     @media(max-width:600px){
       .pgrid,.pgrid-4{grid-template-columns:1fr}
@@ -239,31 +236,14 @@
       .gi.tall{grid-row:span 1;aspect-ratio:3/4}
       .gi.wide{grid-column:span 1;aspect-ratio:3/4}
       .hero-title{font-size:48px}
-    }
-
-    /* SERVICE DETAIL LAYOUT */
-    .sd{display:grid;grid-template-columns:1.15fr 1fr;gap:72px;align-items:center;margin-bottom:88px;padding:0 40px;max-width:1200px;margin-left:auto;margin-right:auto}
-    .sd.rev{grid-template-columns:1fr 1.15fr}
-    .sd-img{aspect-ratio:3/4;overflow:hidden;background:#181410}
-    .sd-img .ph{height:100%}
-    .sd h2{font-family:var(--font-d);font-size:clamp(26px,3vw,40px);font-weight:300;color:var(--cream);margin-bottom:18px;line-height:1.15}
-    .sd h2 em{font-style:italic}
-    .sd p{font-size:13.5px;font-weight:300;color:var(--cream2);line-height:1.85;margin-bottom:22px}
-    .sd-from{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:26px;display:block}
-    .sd-from small{font-size:11px;color:var(--cream2);margin-left:8px;text-transform:none;letter-spacing:0}
-    @media(max-width:960px){
-      .sd,.sd.rev{grid-template-columns:1fr;gap:40px;padding:0 24px;margin-bottom:64px}
-      .sd-img{max-height:400px}
+      .faq-tab{font-size:10px;padding:12px 16px 12px 0}
     }
   </style>
 </head>
 <body>
 
-<!-- NAVIGATION -->
 <nav id="mainNav">
-  <div class="nav-logo" onclick="goTo('home')">
-    <span class="nav-logo-text">Pixels by Daniela</span>
-  </div>
+  <div class="nav-logo" onclick="goTo('home')"><span class="nav-logo-text">Pixels by Daniela</span></div>
   <ul class="nav-links">
     <li><a onclick="goTo('work')" data-page="work">Work</a></li>
     <li><a onclick="goTo('services')" data-page="services">Services</a></li>
@@ -276,7 +256,6 @@
   </button>
 </nav>
 
-<!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <a onclick="goTo('work');closeMenu()">Work</a>
   <a onclick="goTo('services');closeMenu()">Services</a>
@@ -286,11 +265,8 @@
 </div>
 
 
-<!-- ═══════════════════════════════════════
-     HOME
-═══════════════════════════════════════ -->
+<!-- ═══ HOME ═══ -->
 <div id="page-home" class="page active">
-
   <div class="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
@@ -302,89 +278,44 @@
     <div class="scroll-hint">Scroll</div>
   </div>
 
-  <!-- Selected Work -->
   <div class="section">
     <p class="sec-label">Selected Work</p>
     <h2 class="sec-title">Stories worth<br><em>telling twice</em></h2>
     <div class="divider"></div>
     <div class="pgrid mt-36">
-      <div class="gi tall" onclick="goTo('work')">
-        <div class="ph" style="height:100%"><span>Weddings</span></div>
-        <div class="gi-ov"><span class="gi-lbl">Weddings 2026</span></div>
-      </div>
-      <div class="gi" onclick="goTo('work')">
-        <div class="ph" style="height:100%"><span>Portraits</span></div>
-        <div class="gi-ov"><span class="gi-lbl">Portraits 2026</span></div>
-      </div>
-      <div class="gi" onclick="goTo('work')">
-        <div class="ph" style="height:100%"><span>Real Estate</span></div>
-        <div class="gi-ov"><span class="gi-lbl">Real Estate 2024</span></div>
-      </div>
-      <div class="gi wide" onclick="goTo('work')">
-        <div class="ph" style="height:100%"><span>Wine Farm</span></div>
-        <div class="gi-ov"><span class="gi-lbl">Wine Farm 2024</span></div>
-      </div>
-      <div class="gi" onclick="goTo('work')">
-        <div class="ph" style="height:100%"><span>Couples</span></div>
-        <div class="gi-ov"><span class="gi-lbl">Couples 2024</span></div>
-      </div>
+      <div class="gi tall" onclick="goTo('work')"><div class="ph" style="height:100%"><span>Weddings</span></div><div class="gi-ov"><span class="gi-lbl">Weddings 2026</span></div></div>
+      <div class="gi" onclick="goTo('work')"><div class="ph" style="height:100%"><span>Portraits</span></div><div class="gi-ov"><span class="gi-lbl">Portraits 2026</span></div></div>
+      <div class="gi" onclick="goTo('work')"><div class="ph" style="height:100%"><span>Real Estate</span></div><div class="gi-ov"><span class="gi-lbl">Real Estate 2024</span></div></div>
+      <div class="gi wide" onclick="goTo('work')"><div class="ph" style="height:100%"><span>Wine Farm</span></div><div class="gi-ov"><span class="gi-lbl">Wine Farm 2024</span></div></div>
+      <div class="gi" onclick="goTo('work')"><div class="ph" style="height:100%"><span>Couples</span></div><div class="gi-ov"><span class="gi-lbl">Couples 2024</span></div></div>
     </div>
-    <div class="mt-36 tc">
-      <button class="btn btn-ghost" onclick="goTo('work')">View All Work →</button>
-    </div>
+    <div class="mt-36 tc"><button class="btn btn-ghost" onclick="goTo('work')">View All Work →</button></div>
   </div>
 
-  <!-- Services Preview -->
   <div class="section" style="padding-top:0">
     <p class="sec-label">What I Do</p>
     <h2 class="sec-title">Photography &amp; Video<br><em>Services</em></h2>
     <div class="divider"></div>
     <div class="sgrid mt-36">
-      <div class="sc">
-        <div class="sc-num">01</div>
-        <div class="sc-name">Wedding Photography</div>
-        <div class="sc-desc">Your day, documented with intention. Full-day and half-day coverage, fully edited online gallery, and a timeline that keeps everything running smoothly.</div>
-        <div class="sc-from">From R9,500</div>
-      </div>
-      <div class="sc">
-        <div class="sc-num">02</div>
-        <div class="sc-name">Portrait Sessions</div>
-        <div class="sc-desc">Individuals, couples, families, and brands. Relaxed and guided sessions that bring out who you actually are — not a posed version of it.</div>
-        <div class="sc-from">From R1,800</div>
-      </div>
-      <div class="sc">
-        <div class="sc-num">03</div>
-        <div class="sc-name">Real Estate Photography</div>
-        <div class="sc-desc">Professional property photography with 24–48 hour turnaround. Trusted by agents across Cape Town for consistency, quality, and speed.</div>
-        <div class="sc-from">From R3,000</div>
-      </div>
-      <div class="sc">
-        <div class="sc-num">04</div>
-        <div class="sc-name">Video &amp; Reels</div>
-        <div class="sc-desc">Short-form and long-form video for brands, events, and personal projects. Shot with a cinematic eye and delivered ready to post.</div>
-        <div class="sc-from">From R2,500</div>
-      </div>
+      <div class="sc"><div class="sc-num">01</div><div class="sc-name">Wedding Photography</div><div class="sc-desc">Your day, documented with intention. Full-day and half-day coverage, fully edited gallery, and a timeline that keeps everything running smoothly.</div><div class="sc-from">From R9,500</div></div>
+      <div class="sc"><div class="sc-num">02</div><div class="sc-name">Portrait Sessions</div><div class="sc-desc">Individuals, couples, families, and brands. Relaxed and guided sessions that bring out who you actually are — not a posed version of it.</div><div class="sc-from">From R1,800</div></div>
+      <div class="sc"><div class="sc-num">03</div><div class="sc-name">Real Estate Photography</div><div class="sc-desc">Professional property photography with 24–48 hour turnaround. Trusted by agents across Cape Town.</div><div class="sc-from">From R3,000</div></div>
+      <div class="sc"><div class="sc-num">04</div><div class="sc-name">Video &amp; Reels</div><div class="sc-desc">Short-form and long-form video for brands, events, and personal projects. Shot with a cinematic eye and delivered ready to post.</div><div class="sc-from">From R2,500</div></div>
     </div>
-    <div class="mt-36 tc">
-      <button class="btn btn-gold" onclick="goTo('services')">View All Services</button>
-    </div>
+    <div class="mt-36 tc"><button class="btn btn-gold" onclick="goTo('services')">View All Services</button></div>
   </div>
 
-  <!-- Archive CTA Band -->
   <div class="dark-band">
     <div class="tag">Launching Soon</div>
     <h2 class="sec-title tc">Introducing <em>The Archive</em></h2>
     <div class="divider" style="margin:20px auto"></div>
-    <p style="font-size:14.5px;font-weight:300;color:var(--cream2);max-width:480px;margin:0 auto 32px;line-height:1.82">Vintage camcorder rentals for your most cinematic memories. Shot on tape. Warm, grainy, and real.</p>
+    <p style="font-size:14.5px;font-weight:300;color:var(--cream2);max-width:480px;margin:0 auto 32px;line-height:1.82">Vintage camcorder rentals for your most cinematic memories. Delivered to your door via Pargo. Shot on tape. Warm, grainy, and real.</p>
     <button class="btn btn-outline" onclick="goTo('archive')">Explore The Archive</button>
   </div>
-
 </div>
 
 
-<!-- ═══════════════════════════════════════
-     WORK
-═══════════════════════════════════════ -->
+<!-- ═══ WORK ═══ -->
 <div id="page-work" class="page">
   <div class="ph-wrap">
     <p class="sec-label">Portfolio</p>
@@ -392,7 +323,6 @@
     <p class="ph-sub">Cape Town and beyond · Weddings, portraits, real estate, lifestyle and video</p>
     <div class="divider mt-24"></div>
   </div>
-
   <div class="filters">
     <button class="fb active" onclick="filterWork('all',this)">All</button>
     <button class="fb" onclick="filterWork('weddings',this)">Weddings</button>
@@ -401,7 +331,6 @@
     <button class="fb" onclick="filterWork('video',this)">Video</button>
     <button class="fb" onclick="filterWork('lifestyle',this)">Lifestyle</button>
   </div>
-
   <div style="padding:0 40px 88px">
     <div class="pgrid pgrid-4" id="workGrid">
       <div class="gi wi" data-cat="weddings"><div class="ph" style="height:100%"><span>Wedding 2026</span></div><div class="gi-ov"><span class="gi-lbl">Weddings 2026</span></div></div>
@@ -421,9 +350,7 @@
 </div>
 
 
-<!-- ═══════════════════════════════════════
-     SERVICES
-═══════════════════════════════════════ -->
+<!-- ═══ SERVICES ═══ -->
 <div id="page-services" class="page">
   <div class="ph-wrap">
     <p class="sec-label">What I Offer</p>
@@ -432,7 +359,6 @@
     <div class="divider mt-24"></div>
   </div>
 
-  <!-- Wedding -->
   <div class="sd" style="margin-top:0;padding-top:12px">
     <div>
       <span class="tag">01 · Wedding Photography</span>
@@ -451,7 +377,6 @@
     <div class="sd-img"><div class="ph" style="height:100%;min-height:420px"><span>Wedding</span></div></div>
   </div>
 
-  <!-- Portrait -->
   <div class="sd rev">
     <div class="sd-img"><div class="ph" style="height:100%;min-height:420px"><span>Portrait</span></div></div>
     <div>
@@ -469,7 +394,6 @@
     </div>
   </div>
 
-  <!-- Real Estate -->
   <div class="sd">
     <div>
       <span class="tag">03 · Real Estate Photography</span>
@@ -487,8 +411,7 @@
     <div class="sd-img"><div class="ph" style="height:100%;min-height:420px"><span>Real Estate</span></div></div>
   </div>
 
-  <!-- Video -->
-  <div class="sd rev" style="margin-bottom:0;padding-bottom:88px">
+  <div class="sd rev">
     <div class="sd-img"><div class="ph" style="height:100%;min-height:420px"><span>Video</span></div></div>
     <div>
       <span class="tag">04 · Video &amp; Reels</span>
@@ -505,94 +428,108 @@
     </div>
   </div>
 
-  <!-- Custom CTA -->
-  <div class="dark-band">
-    <h2 class="sec-title tc">Have something<br><em>different in mind?</em></h2>
-    <p style="font-size:14px;font-weight:300;color:var(--cream2);max-width:460px;margin:16px auto 30px;line-height:1.82">All pricing above is a starting point. Get in touch with the details of your project and I'll put together a custom quote.</p>
-    <button class="btn btn-gold" onclick="goTo('contact')">Get a Custom Quote</button>
+  <!-- Archive teaser within services -->
+  <div class="dark-band" style="margin-bottom:0">
+    <div class="tag">Also available</div>
+    <h2 class="sec-title tc"><em>The Archive</em> — Camcorder Rentals</h2>
+    <div class="divider" style="margin:20px auto"></div>
+    <p style="font-size:14px;font-weight:300;color:var(--cream2);max-width:460px;margin:0 auto 30px;line-height:1.82">A separate offering under the Pixels by Daniela umbrella — vintage Sony camcorder rental kits, shipped straight to you via Pargo, with an optional edited highlight film.</p>
+    <button class="btn btn-gold" onclick="goTo('archive')">Explore The Archive</button>
   </div>
 </div>
 
 
-<!-- ═══════════════════════════════════════
-     THE ARCHIVE
-═══════════════════════════════════════ -->
+<!-- ═══ THE ARCHIVE ═══ -->
 <div id="page-archive" class="page">
   <div class="arch-hero">
     <div>
       <div class="arch-badge">The Archive · Camcorder Rental · Cape Town</div>
       <h1 style="font-family:var(--font-d);font-size:clamp(48px,9vw,92px);font-weight:300;color:var(--cream);line-height:1;margin-bottom:18px">Your memories<br><em style="font-style:italic;color:var(--cream2)">deserve film.</em></h1>
-      <p style="font-size:14.5px;font-weight:300;color:var(--cream2);max-width:460px;margin:0 auto">Vintage camcorder rentals for those who want their moments to feel like cinema — warm, grainy, and real.</p>
+      <p style="font-size:14.5px;font-weight:300;color:var(--cream2);max-width:460px;margin:0 auto 32px">Vintage Sony camcorder rentals delivered to your nearest Pargo point — warm, grainy, and real.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <button class="btn btn-gold" onclick="goTo('contact')">Register Interest</button>
+        <button class="btn btn-outline" onclick="goTo('faq')">Archive FAQ</button>
+      </div>
     </div>
   </div>
 
-  <div style="max-width:860px;margin:0 auto;padding:88px 40px">
-    <div class="cs-card">
-      <div class="tag">Launching Soon</div>
-      <h3>The Archive is almost ready.</h3>
-      <p>We're finalising our camcorder fleet and rental process. Register your interest now and be the first to know when bookings open.</p>
-      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-        <button class="btn btn-gold" onclick="goTo('contact')">Register Interest</button>
-        <button class="btn btn-ghost" onclick="goTo('contact')">Ask a Question</button>
-      </div>
-    </div>
+  <!-- How it works -->
+  <div class="hiw">
+    <div class="step"><div class="step-n">01</div><h4>Book Your Date</h4><p>Get in touch to confirm your event date and choose your kit. We'll lock in your booking and send confirmation with all the details.</p></div>
+    <div class="step"><div class="step-n">02</div><h4>We Ship via Pargo</h4><p>Your kit is dispatched at least 3 business days before your event to your nearest Pargo pickup point. You'll get an SMS when it's ready to collect.</p></div>
+    <div class="step"><div class="step-n">03</div><h4>Film Everything</h4><p>Hand the camcorder around, let your guests go wild. The kit includes instructions and a shot inspiration guide so no one's lost.</p></div>
+    <div class="step"><div class="step-n">04</div><h4>Return via Pargo</h4><p>Pack it back up using the original packaging and drop it at any Pargo point by 12pm the first business day after your event. A return barcode is included — entirely paperless.</p></div>
+    <div class="step"><div class="step-n">05</div><h4>We Edit Your Film</h4><p>Once the kit arrives back with us, we extract your footage. Your files and edited reel (if included in your package) are delivered via Google Drive or WeTransfer within 21 days.</p></div>
+    <div class="step"><div class="step-n">06</div><h4>Relive It Forever</h4><p>Download your nostalgic film in all its warm, grainy glory. Raw footage + edited highlight reel — yours to keep.</p></div>
+  </div>
 
-    <div class="hiw" style="padding-left:0;padding-right:0">
-      <div class="step">
-        <div class="step-n">01</div>
-        <h4>Browse &amp; Book</h4>
-        <p>Choose your camcorder and dates. Short and long-term rentals available. Book online or contact us directly.</p>
-      </div>
-      <div class="step">
-        <div class="step-n">02</div>
-        <h4>Collect in Cape Town</h4>
-        <p>Pick up from us in Cape Town. ID and deposit required. Full briefing provided — even if you've never shot on tape before.</p>
-      </div>
-      <div class="step">
-        <div class="step-n">03</div>
-        <h4>Shoot &amp; Return</h4>
-        <p>Go make something beautiful. Return the equipment in the same condition and we'll handle the rest.</p>
-      </div>
-    </div>
+  <!-- Kit contents -->
+  <div style="max-width:960px;margin:0 auto;padding:0 40px 72px">
+    <p class="sec-label">What's in the box</p>
+    <h2 style="font-family:var(--font-d);font-size:clamp(28px,4vw,42px);font-weight:300;color:var(--cream);margin-bottom:8px;line-height:1.1">Every kit is <em style="font-style:italic">curated &amp; party-ready.</em></h2>
+    <div class="divider"></div>
+    <ul class="bullet-list mt-24">
+      <li>1 × Vintage Sony Handycam Camcorder</li>
+      <li>2 × High-capacity batteries (fully charged)</li>
+      <li>1 × External battery charger</li>
+      <li>1 × Memory card / tape</li>
+      <li>Clear instruction cards with QR code video tutorial</li>
+      <li>Shot inspiration guide</li>
+      <li>Seeded thank you note</li>
+      <li>Return packaging &amp; Pargo return label</li>
+    </ul>
 
-    <div style="margin-top:72px;padding-top:72px;border-top:1px solid var(--border)">
-      <p class="sec-label">Before You Rent</p>
-      <h2 style="font-family:var(--font-d);font-size:30px;font-weight:300;color:var(--cream);margin-bottom:18px">Good to know <em style="font-style:italic">before you book</em></h2>
+    <!-- Packages -->
+    <div style="margin-top:52px">
+      <p class="sec-label">Packages</p>
+      <h2 style="font-family:var(--font-d);font-size:clamp(26px,3.5vw,38px);font-weight:300;color:var(--cream);margin-bottom:8px">Choose your <em style="font-style:italic">experience.</em></h2>
       <div class="divider"></div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:28px">
-        <div>
-          <p style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Requirements</p>
+      <div class="kit-grid mt-24">
+        <div class="kit-card">
+          <span class="kit-tag">Solo Kit</span>
+          <h3>The Essentials</h3>
+          <p>The full camcorder kit delivered and returned via Pargo. Includes all footage extracted and delivered digitally, plus a 4–5 minute edited nostalgic short film of your event.</p>
           <ul class="bullet-list">
-            <li>Valid SA ID or passport</li>
-            <li>Refundable security deposit</li>
-            <li>18 years or older</li>
+            <li>Full kit delivery via Pargo</li>
+            <li>All raw footage delivered digitally</li>
+            <li>4–5 minute edited highlight film</li>
+            <li>One round of revision requests</li>
           </ul>
         </div>
-        <div>
-          <p style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Rental Terms</p>
+        <div class="kit-card">
+          <span class="kit-tag">Duo Kit</span>
+          <h3>Double the Coverage</h3>
+          <p>Two camcorders for your event — perfect for larger gatherings where you want more angles, more moments, and more story. Includes a 5–6 minute edited film.</p>
           <ul class="bullet-list">
-            <li>Minimum 1-day rental</li>
-            <li>Late returns charged daily</li>
-            <li>Renter responsible for damages</li>
+            <li>Two full kits delivered via Pargo</li>
+            <li>All raw footage delivered digitally</li>
+            <li>5–6 minute edited highlight film</li>
+            <li>One round of revision requests</li>
           </ul>
         </div>
       </div>
-      <div style="margin-top:28px">
-        <button class="btn btn-ghost" onclick="goTo('rental-agreement')">Read Full Rental Agreement →</button>
+    </div>
+
+    <!-- Contact + links -->
+    <div style="margin-top:52px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)">
+      <div style="background:var(--bg);padding:28px 32px">
+        <p style="font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Get in touch</p>
+        <p style="font-size:14px;color:var(--cream);font-weight:300">thearchive.cpt@gmail.com</p>
+        <p style="font-size:14px;color:var(--cream2);font-weight:300;margin-top:4px">@thearchive.cpt</p>
+      </div>
+      <div style="background:var(--bg);padding:28px 32px;display:flex;flex-direction:column;gap:12px;justify-content:center">
+        <button class="btn btn-ghost" onclick="goTo('faq')" style="text-align:left">Archive FAQ →</button>
+        <button class="btn btn-ghost" onclick="goTo('rental-agreement')" style="text-align:left">Rental Agreement →</button>
       </div>
     </div>
   </div>
 </div>
 
 
-<!-- ═══════════════════════════════════════
-     ABOUT
-═══════════════════════════════════════ -->
+<!-- ═══ ABOUT ═══ -->
 <div id="page-about" class="page">
   <div class="about-grid">
-    <div class="about-img">
-      <div class="ph" style="min-height:500px;height:100%"><span>Photo of Daniela</span></div>
-    </div>
+    <div class="about-img"><div class="ph" style="min-height:500px;height:100%"><span>Photo of Daniela</span></div></div>
     <div class="about-text">
       <p class="sec-label">About</p>
       <h2>The person<br><em>behind the lens.</em></h2>
@@ -602,41 +539,29 @@
       <p>When I'm not behind the camera, I'm working on <em style="font-style:italic;color:var(--cream)">The Archive</em> — a vintage camcorder rental service born out of my love for the way film used to feel. Grainy. Warm. Real.</p>
       <p>Based in South Africa. Available to travel. Let's make something together.</p>
       <div class="stats">
-        <div class="stat">
-          <span class="stat-n">3–5</span>
-          <span class="stat-l">Years Experience</span>
-        </div>
-        <div class="stat">
-          <span class="stat-n">∞</span>
-          <span class="stat-l">km Available</span>
-        </div>
-        <div class="stat">
-          <span class="stat-n">100%</span>
-          <span class="stat-l">Edited by Hand</span>
-        </div>
+        <div class="stat"><span class="stat-n">3–5</span><span class="stat-l">Years Experience</span></div>
+        <div class="stat"><span class="stat-n">∞</span><span class="stat-l">km Available</span></div>
+        <div class="stat"><span class="stat-n">100%</span><span class="stat-l">Edited by Hand</span></div>
       </div>
-      <div class="mt-36">
-        <button class="btn btn-gold" onclick="goTo('contact')">Work With Me</button>
-      </div>
+      <div class="mt-36"><button class="btn btn-gold" onclick="goTo('contact')">Work With Me</button></div>
     </div>
   </div>
 </div>
 
 
-<!-- ═══════════════════════════════════════
-     CONTACT
-═══════════════════════════════════════ -->
+<!-- ═══ CONTACT ═══ -->
 <div id="page-contact" class="page">
   <div class="contact-wrap">
     <div class="ci">
       <p class="sec-label">Let's Talk</p>
       <h2>Let's make<br><em>something good.</em></h2>
       <div class="divider"></div>
-      <p>Whether it's a wedding, a portrait session, a real estate shoot, or something completely different — get in touch and let's figure it out together.</p>
+      <p>Whether it's a wedding, a portrait session, a real estate shoot, a camcorder rental, or something completely different — get in touch and let's figure it out together.</p>
       <div class="cd"><div class="cd-lbl">Based In</div><div class="cd-val">Cape Town, South Africa</div></div>
       <div class="cd"><div class="cd-lbl">Available</div><div class="cd-val">Worldwide · Travel quoted separately</div></div>
       <div class="cd"><div class="cd-lbl">Response Time</div><div class="cd-val">Within 24–48 hours</div></div>
-      <div class="cd" style="margin-top:22px"><div class="cd-lbl">Instagram</div><div class="cd-val"><a href="https://instagram.com" target="_blank" style="color:var(--cream);text-decoration:none">@pixelsbydaniela</a></div></div>
+      <div class="cd" style="margin-top:22px"><div class="cd-lbl">The Archive</div><div class="cd-val">thearchive.cpt@gmail.com</div></div>
+      <div class="cd"><div class="cd-lbl">Instagram</div><div class="cd-val"><a href="https://instagram.com/pixelsbydaniela" target="_blank" style="color:var(--cream);text-decoration:none">@pixelsbydaniela</a></div></div>
     </div>
     <div class="cf">
       <div class="fr">
@@ -665,338 +590,130 @@
 </div>
 
 
-<!-- ═══════════════════════════════════════
-     FAQ
-═══════════════════════════════════════ -->
+<!-- ═══ FAQ ═══ -->
 <div id="page-faq" class="page">
   <div class="tp">
     <p class="sec-label">Help</p>
-    <h1>Frequently Asked <em style="font-style:italic">Questions</em></h1>
-    <p class="pmeta">Pixels by Daniela · Updated May 2026</p>
+    <h1>Frequently Asked <em>Questions</em></h1>
+    <p class="pmeta">Pixels by Daniela &amp; The Archive · Updated May 2026</p>
 
-    <div class="faq-item" onclick="toggleFaq(this)">
-      <div class="faq-q">How far in advance should I book? <span class="faq-ic">+</span></div>
-      <div class="faq-a">For weddings and events, 6–12 months ahead is strongly recommended — peak season (September–April) books out fast. Portrait sessions can usually be booked 2–4 weeks out. Reach out as soon as you have a date in mind.</div>
-    </div>
-    <div class="faq-item" onclick="toggleFaq(this)">
-      <div class="faq-q">Do you travel outside Cape Town? <span class="faq-ic">+</span></div>
-      <div class="faq-a">Yes — available throughout South Africa and internationally. Local Cape Town shoots (within 50km) carry no travel surcharge. Further destinations are quoted separately to cover fuel, accommodation where required, and time. International destination shoots — including Europe — are quoted in full.</div>
-    </div>
-    <div class="faq-item" onclick="toggleFaq(this)">
-      <div class="faq-q">How long until I receive my photos? <span class="faq-ic">+</span></div>
-      <div class="faq-a">Turnaround times: Real estate: 24–48 hours · Portraits: 7–10 business days · Weddings and events: 4–6 weeks. Every image is individually edited — nothing is batch-processed. If you have an urgent deadline, mention it when you enquire.</div>
-    </div>
-    <div class="faq-item" onclick="toggleFaq(this)">
-      <div class="faq-q">Do you edit every photo? <span class="faq-ic">+</span></div>
-      <div class="faq-a">Yes. Every delivered image is individually colour-graded, exposed, and retouched by hand. Nothing gets a one-click filter. You'll receive only the images that meet the standard — quality always over quantity.</div>
-    </div>
-    <div class="faq-item" onclick="toggleFaq(this)">
-      <div class="faq-q">What if the weather is bad on shoot day? <span class="faq-ic">+</span></div>
-      <div class="faq-a">For outdoor portraits, we'll monitor the forecast together and reschedule at no extra cost if needed. For weddings, we shoot regardless — rain can be genuinely beautiful, and I'll always find a way to make it work. Weather is not grounds for cancellation at weddings.</div>
-    </div>
-    <div class="faq-item" onclick="toggleFaq(this)">
-      <div class="faq-q">How do I receive my photos? <span class="faq-ic">+</span></div>
-      <div class="faq-a">Via a private, password-protected online gallery. You'll receive a link to download full-resolution files directly. The gallery stays live for 90 days — download everything before it expires. USB delivery available on request at an additional fee.</div>
-    </div>
-    <div class="faq-item" onclick="toggleFaq(this)">
-      <div class="faq-q">Do you offer custom packages? <span class="faq-ic">+</span></div>
-      <div class="faq-a">Yes. The Services page shows starting-from pricing, but every project is different. Get in touch with the details of your shoot and I'll put together a tailored quote.</div>
-    </div>
-    <div class="faq-item" onclick="toggleFaq(this)">
-      <div class="faq-q">What payment methods do you accept? <span class="faq-ic">+</span></div>
-      <div class="faq-a">EFT bank transfer only. A 50% deposit is required to confirm your booking, with the balance due the day before the shoot. Your date is not secured until the deposit is received and acknowledged in writing.</div>
-    </div>
-    <div class="faq-item" onclick="toggleFaq(this)">
-      <div class="faq-q">Who owns the photos after the shoot? <span class="faq-ic">+</span></div>
-      <div class="faq-a">Copyright remains with Pixels by Daniela, as is standard in professional photography. You receive a full personal-use licence — you can print, share, and use the images freely for personal purposes. Commercial use (paid advertising, product packaging, resale) requires a separate commercial licence. See the full Terms &amp; Conditions for detail.</div>
-    </div>
-    <div class="faq-item" onclick="toggleFaq(this)">
-      <div class="faq-q">What about The Archive camcorder rentals? <span class="faq-ic">+</span></div>
-      <div class="faq-a">The Archive is our vintage camcorder rental service — launching soon! You'll need a valid SA ID or passport and a refundable security deposit. Full rental terms are on The Archive page. Register your interest now to be first to know when we go live.</div>
+    <div class="faq-tabs">
+      <button class="faq-tab active" onclick="switchFaqTab('pixels',this)">Photography &amp; Video</button>
+      <button class="faq-tab" onclick="switchFaqTab('archive',this)">The Archive</button>
     </div>
 
-    <div class="info-box mt-48">
-      <p style="font-size:14px;color:var(--cream2);font-weight:300">Still have a question? <a onclick="goTo('contact')" style="color:var(--gold);cursor:pointer;text-decoration:none">Reach out directly →</a></p>
+    <!-- PIXELS FAQ -->
+    <div class="faq-panel active" id="faq-pixels">
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">How far in advance should I book? <span class="faq-ic">+</span></div><div class="faq-a">For weddings and events, 6–12 months ahead is strongly recommended — peak season (September–April) books out fast. Portrait sessions can usually be booked 2–4 weeks out. Reach out as soon as you have a date in mind.</div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Do you travel outside Cape Town? <span class="faq-ic">+</span></div><div class="faq-a">Yes — available throughout South Africa and internationally. Local Cape Town shoots (within 50km) carry no travel surcharge. Further destinations are quoted separately to cover fuel, accommodation where required, and time.</div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">How long until I receive my photos? <span class="faq-ic">+</span></div><div class="faq-a">Real estate: 24–48 hours · Portraits: 7–10 business days · Weddings and events: 4–6 weeks. Every image is individually edited — nothing is batch-processed. If you have an urgent deadline, mention it when you enquire.</div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Do you edit every photo? <span class="faq-ic">+</span></div><div class="faq-a">Yes. Every delivered image is individually colour-graded, exposed, and retouched by hand. Nothing gets a one-click filter. You'll receive only the images that meet the standard — quality always over quantity.</div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">What if the weather is bad on shoot day? <span class="faq-ic">+</span></div><div class="faq-a">For outdoor portraits, we'll monitor the forecast together and reschedule at no extra cost if needed. For weddings, we shoot regardless — rain can be genuinely beautiful, and I'll always find a way to make it work.</div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">How do I receive my photos? <span class="faq-ic">+</span></div><div class="faq-a">Via a private, password-protected online gallery. You'll receive a link to download full-resolution files directly. The gallery stays live for 90 days — download everything before it expires. USB delivery available on request at an additional fee.</div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">What payment methods do you accept? <span class="faq-ic">+</span></div><div class="faq-a">EFT bank transfer only. A 50% deposit is required to confirm your booking, with the balance due the day before the shoot. Your date is not secured until the deposit is received and acknowledged in writing.</div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Who owns the photos after the shoot? <span class="faq-ic">+</span></div><div class="faq-a">Copyright remains with Pixels by Daniela. You receive a full personal-use licence — you can print, share, and use the images freely for personal purposes. Commercial use requires a separate licence. See the full Terms &amp; Conditions for detail.</div></div>
+    </div>
+
+    <!-- ARCHIVE FAQ -->
+    <div class="faq-panel" id="faq-archive">
+      <p class="faq-section-label">The Basics</p>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">How does The Archive work? <span class="faq-ic">+</span></div><div class="faq-a">Get in touch to lock in your date and we'll discuss your event details. Once confirmed, we ship a vintage camcorder kit to your nearest Pargo drop-off point well ahead of your event. You and your guests film everything in classic, nostalgic style. After the party, return the kit via Pargo using a digital barcode sent straight to your phone via SMS. Once it lands back with us, we extract all your footage and craft your custom highlight reel if you chose that package.</div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">What comes in the rental kit? <span class="faq-ic">+</span></div><div class="faq-a">Every Archive kit is a curated, party-ready box containing: 1 × Vintage Sony Handycam Camcorder · 2 × High-capacity batteries (fully charged) · 1 × External battery charger · 1 × Memory card / tape · Clear instruction cards with a QR code video tutorial · Shot inspiration guide · Seeded thank you note · Return packaging and Pargo return label.</div></div>
+
+      <p class="faq-section-label">Delivery &amp; Returns</p>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">When and how do I return the kit? <span class="faq-ic">+</span></div><div class="faq-a">To keep things fair for the next booking, you must drop the kit back at a designated Pargo point no later than 12:00 PM on the first business day following your event (usually Monday morning after a weekend event). Returning is entirely paperless — pack everything securely back into the original box, and you'll receive a Pargo return barcode via SMS. Just show that barcode on your phone at the counter, hand over the box, and you're done.</div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">When will I receive the kit before my event? <span class="faq-ic">+</span></div><div class="faq-a">We dispatch your kit at least 3 business days before your event date. You'll receive an SMS notification from Pargo when your parcel is ready for collection. If you haven't received a notification 2 days before your event, contact us immediately at thearchive.cpt@gmail.com.</div></div>
+
+      <p class="faq-section-label">Power &amp; Batteries</p>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Will the battery die mid-party? <span class="faq-ic">+</span></div><div class="faq-a">Not on our watch. We include upgraded, high-capacity batteries for plenty of recording time, plus two batteries and a fast charger in every single box. Just pop the spare onto the charger while you use the first one — you'll never miss a moment.</div></div>
+
+      <p class="faq-section-label">The Footage</p>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">How do I get my video files? <span class="faq-ic">+</span></div><div class="faq-a">Once the kit arrives back at our base, we securely extract your files. Within 21 days, we email you a private Google Drive or WeTransfer link. From there you can download your raw footage in all its unedited glory, plus your edited highlight reel if you added it to your package.</div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Can I use the footage on social media? <span class="faq-ic">+</span></div><div class="faq-a">Yes — you have full personal rights to your film for private and social media use. When sharing the film on your own social media, we ask that you credit @thearchive.cpt. The Archive also reserves the right to use footage for our own portfolio and social media unless you've requested a privacy booking (a 15% privacy fee applies).</div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">What if the equipment isn't working when I receive it? <span class="faq-ic">+</span></div><div class="faq-a">Contact us within 12 hours of collection via WhatsApp or email at thearchive.cpt@gmail.com. We'll assess the issue and either send replacement equipment or issue a full refund. Do not attempt to repair the equipment yourself.</div></div>
+
+      <div class="info-box mt-48">
+        <p style="font-size:14px;color:var(--cream2);font-weight:300;margin-bottom:12px">Ready to book or have more questions?</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <button class="btn btn-gold" onclick="goTo('contact')">Get in Touch</button>
+          <button class="btn btn-ghost" onclick="goTo('rental-agreement')">Read Rental Agreement →</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 
-<!-- ═══════════════════════════════════════
-     TERMS & CONDITIONS
-═══════════════════════════════════════ -->
+<!-- ═══ TERMS & CONDITIONS ═══ -->
 <div id="page-terms" class="page">
   <div class="tp">
     <p class="sec-label">Legal</p>
-    <h1>Terms &amp; <em style="font-style:italic">Conditions</em></h1>
+    <h1>Terms &amp; <em>Conditions</em></h1>
     <p class="pmeta">Pixels by Daniela · Effective May 2026 · Cape Town, South Africa</p>
-
     <div class="hbox"><strong>Please read these terms carefully.</strong> By booking any service with Pixels by Daniela, you agree to the following terms in full.</div>
-
-    <div class="ts">
-      <h2>1. Bookings &amp; Deposits</h2>
-      <p>All bookings require a non-refundable 50% deposit to secure the date. The remaining balance is due no later than the day before the shoot. Bookings are not confirmed until the deposit has been received and acknowledged in writing.</p>
-    </div>
-    <div class="ts">
-      <h2>2. Cancellations &amp; Rescheduling</h2>
-      <p>Deposits are non-refundable. Rescheduling requests made with more than 14 days' notice are accommodated free of charge. Cancellations within 14 days of the shoot forfeit the deposit. Full payment is required for cancellations within 48 hours of the shoot.</p>
-      <p>Wedding and event bookings are non-refundable once confirmed. In the event of cancellation by Pixels by Daniela due to illness or emergency, a full refund or alternative date will be offered.</p>
-    </div>
-    <div class="ts">
-      <h2>3. Copyright &amp; Usage Rights</h2>
-      <p>All photographs and video content remain the intellectual property of Pixels by Daniela. Clients receive a non-exclusive personal-use licence:</p>
-      <ul>
-        <li>Personal use (social media, printing, personal sharing): freely permitted</li>
-        <li>Commercial use (advertising, product packaging, resale): requires a separate written commercial licence</li>
-        <li>Editing, filtering, or materially altering delivered images is not permitted without consent</li>
-      </ul>
-      <p>Pixels by Daniela reserves the right to use images for portfolio and social media purposes unless otherwise agreed in writing before the shoot.</p>
-    </div>
-    <div class="ts">
-      <h2>4. Delivery Timelines</h2>
-      <ul>
-        <li>Real estate photography: 24–48 hours</li>
-        <li>Portrait sessions: 7–10 business days</li>
-        <li>Weddings and events: 4–6 weeks</li>
-      </ul>
-      <p>These are standard timelines, not guarantees. You will be notified in advance of any delays.</p>
-    </div>
-    <div class="ts">
-      <h2>5. Client Responsibilities</h2>
-      <p>Clients are responsible for ensuring the shoot environment is accessible, safe, and ready at the agreed time. Delays caused by the client reduce available shoot time without refund. For weddings and events, a completed timeline must be provided at least 7 days before the date.</p>
-    </div>
-    <div class="ts">
-      <h2>6. Liability</h2>
-      <p>Pixels by Daniela exercises all reasonable care during shoots. No liability is accepted for loss of images due to technical failure beyond our control, weather-related issues, or losses arising from third-party delivery platforms. All reasonable precautions are taken, including backup equipment and dual-card recording where possible.</p>
-    </div>
-    <div class="ts">
-      <h2>7. Force Majeure</h2>
-      <p>In the event of circumstances beyond our control (natural disaster, government restrictions, serious illness, or other unforeseeable events), a full refund or rescheduled date will be offered at our discretion.</p>
-    </div>
-    <div class="ts">
-      <h2>8. Governing Law</h2>
-      <p>These terms are governed by the laws of the Republic of South Africa.</p>
-    </div>
-    <div class="ts">
-      <h2>9. Contact</h2>
-      <p>Questions about these terms? <a onclick="goTo('contact')" style="color:var(--gold);cursor:pointer;text-decoration:none">Reach out here →</a></p>
-    </div>
+    <div class="ts"><h2>1. Bookings &amp; Deposits</h2><p>All bookings require a non-refundable 50% deposit to secure the date. The remaining balance is due no later than the day before the shoot. Bookings are not confirmed until the deposit has been received and acknowledged in writing.</p></div>
+    <div class="ts"><h2>2. Cancellations &amp; Rescheduling</h2><p>Deposits are non-refundable. Rescheduling requests made with more than 14 days' notice are accommodated free of charge. Cancellations within 14 days of the shoot forfeit the deposit. Full payment is required for cancellations within 48 hours of the shoot.</p><p>Wedding and event bookings are non-refundable once confirmed. In the event of cancellation by Pixels by Daniela due to illness or emergency, a full refund or alternative date will be offered.</p></div>
+    <div class="ts"><h2>3. Copyright &amp; Usage Rights</h2><p>All photographs and video content remain the intellectual property of Pixels by Daniela. Clients receive a non-exclusive personal-use licence:</p><ul><li>Personal use (social media, printing, personal sharing): freely permitted</li><li>Commercial use (advertising, product packaging, resale): requires a separate written commercial licence</li><li>Editing, filtering, or materially altering delivered images is not permitted without consent</li></ul><p>Pixels by Daniela reserves the right to use images for portfolio and social media purposes unless otherwise agreed in writing before the shoot.</p></div>
+    <div class="ts"><h2>4. Delivery Timelines</h2><ul><li>Real estate photography: 24–48 hours</li><li>Portrait sessions: 7–10 business days</li><li>Weddings and events: 4–6 weeks</li></ul></div>
+    <div class="ts"><h2>5. Client Responsibilities</h2><p>Clients are responsible for ensuring the shoot environment is accessible, safe, and ready at the agreed time. Delays caused by the client reduce available shoot time without refund.</p></div>
+    <div class="ts"><h2>6. Liability</h2><p>Pixels by Daniela exercises all reasonable care during shoots. No liability is accepted for loss of images due to technical failure beyond our control, weather-related issues, or losses arising from third-party delivery platforms.</p></div>
+    <div class="ts"><h2>7. Governing Law</h2><p>These terms are governed by the laws of the Republic of South Africa.</p></div>
+    <div class="ts"><h2>8. Contact</h2><p>Questions about these terms? <a onclick="goTo('contact')" style="color:var(--gold);cursor:pointer;text-decoration:none">Reach out here →</a></p></div>
   </div>
 </div>
 
 
-<!-- ═══════════════════════════════════════
-     RENTAL AGREEMENT
-═══════════════════════════════════════ -->
+<!-- ═══ RENTAL AGREEMENT ═══ -->
 <div id="page-rental-agreement" class="page">
   <div class="tp">
     <p class="sec-label">The Archive</p>
-    <h1>Rental <em style="font-style:italic">Agreement</em></h1>
-    <p class="pmeta">The Archive by Pixels by Daniela · Effective on booking · Cape Town, South Africa</p>
+    <h1>Camcorder Rental <em>Agreement</em></h1>
+    <p class="pmeta">The Archive by Pixels by Daniela · thearchive.cpt@gmail.com · @thearchive.cpt</p>
+    <div class="hbox"><strong>This agreement applies to all camcorder rentals through The Archive.</strong> By completing a booking, both parties confirm they have read, understood, and agree to the terms below.</div>
 
-    <div class="hbox"><strong>This agreement applies to all camcorder rentals through The Archive.</strong> By completing a booking you confirm that you have read, understood, and agree to these terms.</div>
-
-    <div class="ts">
-      <h2>1. Eligibility</h2>
-      <ul>
-        <li>You must be 18 years or older to rent from The Archive</li>
-        <li>Valid South African ID or passport required at time of collection</li>
-        <li>Business bookings require company registration details</li>
-      </ul>
+    <div class="ts"><h2>1. Parties</h2><p><strong style="color:var(--cream);font-weight:400">Service Provider (Lessor):</strong> Daniela, trading as The Archive (Pixels by Daniela), Cape Town, South Africa</p><p>The client details (Lessee name, event date, event type, venue, delivery address, nearest Pargo point, contact number, and email address) are captured and confirmed at the time of booking.</p></div>
+    <div class="ts"><h2>2. Purpose</h2><p>The Lessee wishes to hire The Archive to provide vintage camcorder rental and editing services for their event. The Lessor agrees to provide such services according to the terms set out below. All physical items provided by the Lessor are referred to as 'Equipment'.</p></div>
+    <div class="ts"><h2>3. Equipment</h2><p>The following Equipment is included in every rental kit:</p><ul><li>Vintage Sony Handycam (model specified in booking confirmation)</li><li>2 × Spare batteries</li><li>1 × External battery charger</li><li>1 × Formatted memory card / tape</li><li>Instruction card and shot inspiration guide</li><li>Seeded thank you note</li><li>Return packaging and Pargo return label</li></ul></div>
+    <div class="ts"><h2>4. Fees and Deposit</h2><p>The full service fee plus the refundable deposit are due in full before the Equipment is shipped. Payment is via EFT. Banking details will be provided on the invoice.</p><p>The deposit will be refunded within 5 business days of the Equipment being received by The Archive in good working condition, on time, and with no damage.</p><p>The deposit will be forfeited in full or in part if:</p><ul><li>Equipment is returned damaged beyond normal wear and tear</li><li>Equipment is returned late without prior written agreement</li><li>Equipment is not returned at all</li><li>Memory card or internal storage has been deleted or formatted by the Lessee</li></ul></div>
+    <div class="ts"><h2>5. Shipping &amp; Return (Pargo)</h2><p>The Archive will ship the Equipment to the Lessee's nearest Pargo pickup point at least 3 business days before the event date. The Lessee will receive an SMS notification from Pargo when the parcel is ready for collection.</p><p>The Lessee must return the Equipment no later than 12:00 PM on the first business day after the event date. The Archive will provide a Pargo return label inside the kit. The Lessee must:</p><ul><li>Repack all Equipment securely using the original packaging and materials provided</li><li>Take the sealed package to any Pargo drop-off point</li><li>Present the return label or barcode provided (via SMS — entirely paperless)</li><li>Retain the Pargo drop-off receipt until The Archive confirms receipt</li></ul><p>The Archive is not liable for delays caused by Pargo or other courier services outside of its control. If the Lessee returns the Equipment via any method other than the provided Pargo label, The Archive reserves the right to charge additional fees.</p></div>
+    <div class="ts"><h2>6. Rental Period</h2><p>The rental period commences on the date of first collection from a Pargo point by the Lessee. All Equipment must be securely packaged and dropped off at a designated Pargo point no later than 12:00 PM on the first business day following the event date (typically the Monday following a weekend event), unless otherwise agreed in writing.</p></div>
+    <div class="ts"><h2>7. Use of Equipment</h2><p>The Lessee agrees to:</p><ul><li>Use the Equipment carefully, safely, and in accordance with the instructions provided</li><li>Not attempt to repair, modify, or alter the Equipment in any way</li><li>Not allow persons under the age of 18 to be solely responsible for the Equipment</li><li>Ensure the Equipment is protected from water, extreme heat, and physical damage</li><li>Return all Equipment, accessories, and packaging materials provided</li></ul><p>The Lessee acknowledges that the Equipment may be used gear and may have minor cosmetic wear. The Archive warrants that all Equipment will be in proper working condition at the time of dispatch.</p></div>
+    <div class="ts"><h2>8. Damage and Loss</h2><p>The Lessee assumes full responsibility for the Equipment from the time of collection to the time of confirmed return receipt. In the event of damage or loss:</p><ul><li>Minor damage: assessed and invoiced at repair cost</li><li>Significant damage or loss: the Lessee is liable for the full replacement cost</li><li>The deposit will be applied first against any damage or loss costs</li></ul><p>The Archive accepts no liability for footage missed due to guest misuse, flat batteries, full storage, or user error.</p></div>
+    <div class="ts"><h2>9. Non-Working Equipment</h2><p>If the Lessee receives Equipment that is not functioning correctly, they must notify The Archive within 12 hours of collection via WhatsApp or email at thearchive.cpt@gmail.com. The Archive will assess the issue and either provide replacement Equipment or issue a full refund at the Lessee's option. Non-working Equipment must not be repaired by the Lessee and must be returned via the provided Pargo label.</p></div>
+    <div class="ts"><h2>10. Editing and Deliverables</h2><p>Upon receipt of the returned Equipment and footage, The Archive will deliver:</p><ul><li>A 4–5 minute edited nostalgic short film (Solo Kit) or 5–6 minute film (Duo Kit)</li><li>All raw clips organised and delivered via digital download link (WeTransfer or Google Drive)</li><li>One round of minor revision requests (e.g. music change, clip removal)</li></ul><p>The final film will be delivered within 21 days of the Equipment being received. Additional revision requests beyond the first round may be subject to an additional fee.</p></div>
+    <div class="ts"><h2>11. Footage Rights and Portfolio Use</h2><p>The Lessee grants The Archive the irrevocable right to use all footage captured during the event and the final edited film for portfolio, social media, and marketing purposes, including Instagram, TikTok, and The Archive website.</p><p>The Lessee retains full personal rights to their film for private use. When sharing the film on personal social media, the Lessee agrees to credit @thearchive.cpt.</p><p>If the Lessee requires complete footage privacy, this clause must be amended in writing before the agreement is signed. A Privacy Fee equal to 15% of the total rental package cost will be added to the final invoice.</p></div>
+    <div class="ts"><h2>12. Cancellation and Rescheduling</h2><ul><li>More than 30 days before the event: deposit forfeited, 100% of service fee refunded</li><li>15–30 days before the event: deposit forfeited, 50% of service fee refunded</li><li>Within 14 days of the event: no refund</li><li>Rescheduling more than 14 days before the event: no penalty, subject to availability</li><li>Rescheduling within 14 days: treated as a cancellation</li></ul></div>
+    <div class="ts"><h2>13. Limitation of Liability</h2><p>The Archive will make every reasonable effort to deliver the service as agreed. In the unlikely event of equipment failure, illness, loss in transit, or circumstances beyond The Archive's control, liability is limited to a refund of the deposit paid. The Archive is not liable for consequential, indirect, or incidental losses.</p></div>
+    <div class="ts"><h2>14. Governing Law</h2><p>This agreement is governed by the laws of the Republic of South Africa. Any disputes will be subject to the jurisdiction of the courts of the Western Cape.</p></div>
+    <div class="ts"><h2>15. Entire Agreement</h2><p>This agreement constitutes the entire understanding between the parties with respect to the rental of Equipment. Any amendments must be agreed to in writing by both parties.</p></div>
+    <div style="margin-top:36px;padding-top:36px;border-top:1px solid var(--border);text-align:center">
+      <p style="font-family:var(--font-d);font-size:16px;font-style:italic;color:var(--cream2);margin-bottom:20px">"The magic isn't in the perfection — it's in the archives."</p>
+      <p style="font-size:11.5px;color:var(--cream2);letter-spacing:.08em">The Archive by Pixels by Daniela · thearchive.cpt@gmail.com · @thearchive.cpt</p>
     </div>
-    <div class="ts">
-      <h2>2. Bookings &amp; Payment</h2>
-      <p>Full payment is required at the time of reservation. Rentals are calculated per calendar day. Minimum rental period is 1 day. Payment is by EFT only.</p>
-      <p>A refundable security deposit (disclosed at booking, typically R500–R2,000 depending on equipment) is required at collection and returned within 3 business days of a clean, undamaged return.</p>
-    </div>
-    <div class="ts">
-      <h2>3. Collection &amp; Return</h2>
-      <ul>
-        <li>Equipment is collected from and returned to Cape Town (address provided at booking confirmation)</li>
-        <li>Return is due by 10:00am on the final rental day</li>
-        <li>Late returns are charged at the full daily rate per additional day</li>
-        <li>Equipment must be returned in the same condition as collected</li>
-      </ul>
-    </div>
-    <div class="ts">
-      <h2>4. Care of Equipment</h2>
-      <p>The renter accepts full responsibility for the equipment from collection to return. This includes:</p>
-      <ul>
-        <li>Protecting equipment from water, impact, and extreme temperatures</li>
-        <li>Using only supplied accessories and cables</li>
-        <li>Not attempting repairs or modifications</li>
-        <li>Keeping equipment secure at all times</li>
-      </ul>
-    </div>
-    <div class="ts">
-      <h2>5. Damage &amp; Loss</h2>
-      <p>The renter is liable for the full cost of repair or replacement in the event of damage or loss. Costs are first deducted from the security deposit; any remainder is the renter's responsibility and must be settled within 14 days.</p>
-      <p>Normal wear is accepted. Accidental damage, water damage, and loss are not covered and remain the renter's liability. We strongly recommend personal insurance for high-value rentals.</p>
-    </div>
-    <div class="ts">
-      <h2>6. Cancellations</h2>
-      <ul>
-        <li>More than 72 hours' notice: full refund minus R150 admin fee</li>
-        <li>Within 72 hours: 50% refund</li>
-        <li>Same-day cancellations: no refund</li>
-      </ul>
-    </div>
-    <div class="ts">
-      <h2>7. Permitted Use</h2>
-      <p>Equipment is rented for personal and professional creative use only. Equipment may not be sub-rented or transferred to a third party. Commercial productions requiring insurance certificates should contact us in advance.</p>
-    </div>
-    <div class="ts">
-      <h2>8. Governing Law</h2>
-      <p>This agreement is governed by the laws of the Republic of South Africa.</p>
-    </div>
-    <div class="mt-36">
-      <button class="btn btn-ghost" onclick="goTo('archive')">← Back to The Archive</button>
-    </div>
+    <div class="mt-36"><button class="btn btn-ghost" onclick="goTo('archive')">← Back to The Archive</button></div>
   </div>
 </div>
 
 
-<!-- ═══════════════════════════════════════
-     CAREERS
-═══════════════════════════════════════ -->
-<div id="page-careers" class="page">
-  <div class="tp">
-    <p class="sec-label">Join the Team</p>
-    <h1>Work with <em style="font-style:italic">Pixels by Daniela</em></h1>
-    <p class="pmeta">Cape Town · Freelance &amp; Collaborative · Updated May 2026</p>
-
-    <p style="font-size:14.5px;font-weight:300;color:var(--cream2);line-height:1.88;margin-bottom:44px;max-width:560px">I work lean and collaborative. When the workload grows, I look for talented people who share the same eye for quality and the same love for the work. Here's what I currently look for.</p>
-
-    <div class="cc-grid">
-      <div class="cc">
-        <span class="cc-tag">Freelance · As Needed</span>
-        <h3>Second Shooter</h3>
-        <p>Looking for a reliable second shooter for weddings and larger events. You should be confident working independently, have your own gear, and know how to read a room without being directed the whole day.</p>
-        <ul class="bullet-list" style="margin-bottom:22px">
-          <li>2+ years wedding or event experience preferred</li>
-          <li>Own full-frame or mirrorless kit</li>
-          <li>Cape Town based</li>
-        </ul>
-        <button class="btn btn-ghost" onclick="goTo('contact')">Apply</button>
-      </div>
-      <div class="cc">
-        <span class="cc-tag">Freelance · Project-Based</span>
-        <h3>Video &amp; BTS Assistant</h3>
-        <p>Helping out on video shoots — operating a second camera, BTS coverage, or on-set logistics. Great for someone growing their skills in video production and looking for hands-on experience.</p>
-        <ul class="bullet-list" style="margin-bottom:22px">
-          <li>Passion for film and creative storytelling</li>
-          <li>Comfortable on set and adaptable</li>
-          <li>Cape Town based or willing to travel</li>
-        </ul>
-        <button class="btn btn-ghost" onclick="goTo('contact')">Apply</button>
-      </div>
-    </div>
-
-    <div class="info-box mt-48">
-      <h3 style="font-family:var(--font-d);font-size:20px;font-weight:300;color:var(--cream);margin-bottom:9px">Nothing that fits?</h3>
-      <p style="font-size:13.5px;color:var(--cream2);font-weight:300;line-height:1.82;margin-bottom:20px">If you think you'd be a good fit in some other way, reach out anyway. Tell me who you are, what you do, and what you're looking for. The right people always find a way in.</p>
-      <button class="btn btn-gold" onclick="goTo('contact')">Get in Touch</button>
-    </div>
-  </div>
-</div>
-
-
-<!-- ═══════════════════════════════════════
-     FOOTER
-═══════════════════════════════════════ -->
+<!-- ═══ FOOTER ═══ -->
 <footer id="mainFooter">
   <div class="fg">
     <div class="fb-brand">
       <span class="logo-text">Pixels by Daniela</span>
       <p>Photography &amp; Video for brands, weddings, and people — based in Cape Town, available worldwide.</p>
-    </div>
-    <div class="fc">
-      <h4>Navigate</h4>
-      <ul>
-        <li><a onclick="goTo('work')">Work</a></li>
-        <li><a onclick="goTo('services')">Services</a></li>
-        <li><a onclick="goTo('archive')">The Archive</a></li>
-        <li><a onclick="goTo('about')">About</a></li>
-        <li><a onclick="goTo('contact')">Contact</a></li>
-      </ul>
-    </div>
-    <div class="fc">
-      <h4>Services</h4>
-      <ul>
-        <li><a onclick="goTo('services')">Wedding Photography</a></li>
-        <li><a onclick="goTo('services')">Portrait Sessions</a></li>
-        <li><a onclick="goTo('services')">Real Estate</a></li>
-        <li><a onclick="goTo('services')">Video &amp; Reels</a></li>
-      </ul>
-    </div>
-    <div class="fc">
-      <h4>Legal &amp; Info</h4>
-      <ul>
-        <li><a onclick="goTo('faq')">FAQ</a></li>
-        <li><a onclick="goTo('terms')">Terms &amp; Conditions</a></li>
-        <li><a onclick="goTo('rental-agreement')">Rental Agreement</a></li>
-        <li><a onclick="goTo('careers')">Careers</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="fb-btm">
-    <span class="fb-copy">© 2026 Pixels by Daniela · All rights reserved · Cape Town, South Africa</span>
-    <div class="fb-social">
-      <a href="https://instagram.com" target="_blank">Instagram</a>
-    </div>
-  </div>
-</footer>
-
-
-<script>
-  const PAGES = ['home','work','services','archive','about','contact','faq','terms','rental-agreement','careers'];
-
-  function goTo(page) {
-    PAGES.forEach(p => {
-      const el = document.getElementById('page-' + p);
-      if (el) el.classList.remove('active');
-    });
-    const target = document.getElementById('page-' + page);
-    if (target) {
-      target.classList.add('active');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-    document.querySelectorAll('.nav-links a[data-page]').forEach(a => {
-      a.classList.toggle('active', a.dataset.page === page);
-    });
-    history.pushState(null, '', '#' + page);
-  }
-
-  function toggleMenu() {
-    document.getElementById('mobileMenu').classList.toggle('open');
-  }
-
-  function closeMenu() {
-    document.getElementById('mobileMenu').classList.remove('open');
-  }
-
-  function toggleFaq(item) {
-    item.classList.toggle('open');
-  }
-
-  function filterWork(cat, btn) {
-    document.querySelectorAll('.fb').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    document.querySelectorAll('.wi').forEach(item => {
-      item.classList.toggle('hidden', cat !== 'all' && item.dataset.cat !== cat);
-    });
-  }
-
-  // Hash routing
-  window.addEventListener('load', () => {
-    const hash = window.location.hash.replace('#', '');
-    if (hash && PAGES.includes(hash)) goTo(hash);
-  });
-  window.addEventListener('popstate', () => {
-    const hash = window.location.hash.replace('#', '');
-    if (hash && PAGES.includes(hash)) goTo(hash);
-    else goTo('home');
-  });
-</script>
-</body>
-</html>
+      <div class="socials" style="margin-top:20px">
+        <!-- Instagram -->
+        <a href="https://instagram.com/pixelsbydaniela" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <!-- TikTok -->
+        <a href="https://tiktok.com/@pixelsbydaniela" target="_blank" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        </a>
+        <!-- Facebook -->
+        <a href="https://facebook.com/pixelsbydaniela" target="_blank" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/27732395059" target="_blank" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.8
