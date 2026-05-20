@@ -653,25 +653,42 @@
   </div>
 </div>
 
- <!-- Archive teaser -->
-  <div class="arch-band">
-    <div class="arch-band-inner" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
-        
-        <div class="arch-text" style="flex: 1.5; min-width: 300px;">
-          <div class="tag">Launching Soon</div>
-          <h2>Introducing <em>The Archive</em></h2>
-          <p>With vintage camcorder rentals for your most cinematic memories. Delivered to your door via Pargo. Shot on tape. Warm, grainy, and real.</p>
-          <button class="btn btn-outline" onclick="goTo('archive')">Explore The Archive</button>
-        </div>
+<style>
+  .arch-band-animated {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: luxuryPanIn 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 0.1s;
+  }
 
-        <div class="arch-logo" style="flex: 1; min-width: 250px; text-align: center;">
-          <img src="Logo_Transparent_Negative.png" alt="The Archive" style="max-width: 420px; width: 100%; height: auto; display: inline-block;">
-        </div>
-    </div>
+  @keyframes luxuryPanIn {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<div class="arch-band arch-band-animated">
+  <div class="arch-band-inner" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
+      
+      <div class="arch-text" style="flex: 1.5; min-width: 300px;">
+        <div class="tag">Launching Soon</div>
+        <h2>Introducing <em>The Archive</em></h2>
+        <p>With vintage camcorder rentals for your most cinematic memories. Delivered to your door via Pargo. Shot on tape. Warm, grainy, and real.</p>
+        <button class="btn btn-outline" onclick="goTo('archive')">Explore The Archive</button>
+      </div>
+
+      <div class="arch-logo" style="flex: 1; min-width: 250px; text-align: center;">
+        <img src="Logo_Transparent_Negative.png" alt="The Archive" style="max-width: 420px; width: 100%; height: auto; display: inline-block;">
+      </div>
   </div>
 </div>
 
-<!-- ═══ CONTACT ═══ -->
 <div id="page-contact" class="page">
   <div class="contact-wrap">
     <div class="ci">
@@ -690,9 +707,7 @@
     <form class="cf" action="https://api.web3forms.com/submit" method="POST">
       
       <input type="hidden" name="access_key" value="5e903f3c-acc4-40eb-931a-c574ceeafec8">
-      
       <input type="hidden" name="redirect" value="https://www.pixelsbydaniela.com">
-      
       <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
       <div class="fr">
