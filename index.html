@@ -686,36 +686,50 @@
       <div class="cd"><div class="cd-lbl">Instagram</div><div class="cd-val"><a href="https://instagram.com/pixelsbydaniela" target="_blank" style="color:var(--cream);text-decoration:none">@pixelsbydaniela</a></div></div>
       <div class="cd"><div class="cd-lbl">Archive IG</div><div class="cd-val"><a href="https://instagram.com/thearchive.cpt" target="_blank" style="color:var(--cream);text-decoration:none">@thearchive.cpt</a></div></div>
     </div>
-    <div class="cf">
+
+    <form class="cf" action="https://api.web3forms.com/submit" method="POST">
+      
+      <input type="hidden" name="access_key" value="5e903f3c-acc4-40eb-931a-c574ceeafec8">
+      
+      <input type="hidden" name="redirect" value="https://www.pixelsbydaniela.com">
+      
+      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
       <div class="fr">
-        <div class="ff"><label>First Name</label><input type="text" placeholder="Jane"></div>
-        <div class="ff"><label>Last Name</label><input type="text" placeholder="Smith"></div>
+        <div class="ff"><label>First Name</label><input type="text" name="First Name" placeholder="Jane" required></div>
+        <div class="ff"><label>Last Name</label><input type="text" name="Last Name" placeholder="Smith" required></div>
       </div>
-      <div class="ff"><label>Email Address</label><input type="email" placeholder="jane@example.com"></div>
+      
+      <div class="ff"><label>Email Address</label><input type="email" name="Email" placeholder="jane@example.com" required></div>
+      
       <div class="ff">
         <label>I'm enquiring about</label>
-        <select>
+        <select name="Enquiry Type" required>
           <option value="">Select a service...</option>
-          <option>Wedding Photography</option>
-          <option>Portrait Session</option>
-          <option>Real Estate Photography</option>
-          <option>Branding &amp; Content</option>
-          <option>Video &amp; Reels</option>
-          <option>The Archive – Camcorder Rental</option>
-          <option>Something else</option>
+          <option value="Wedding Photography">Wedding Photography</option>
+          <option value="Portrait Session">Portrait Session</option>
+          <option value="Real Estate Photography">Real Estate Photography</option>
+          <option value="Branding &amp; Content">Branding &amp; Content</option>
+          <option value="Video &amp; Reels">Video &amp; Reels</option>
+          <option value="The Archive – Camcorder Rental">The Archive – Camcorder Rental</option>
+          <option value="Something else">Something else</option>
         </select>
       </div>
+      
       <div class="ff">
         <label>Date (if applicable)</label>
         <input type="text" 
+               name="Requested Date"
                placeholder="DD / MM / YYYY" 
                maxlength="10" 
-               oninput="this.value = this.value.replace(/[^0-8]/g, '').replace(/^(\d{2})(\d)/, '$1/$2').replace(/^(\d{2})\/(\d{2})(\d)/, '$1/$2/$3')">
+               oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/^(\d{2})(\d)/, '$1/$2').replace(/^(\d{2})\/(\d{2})(\d)/, '$1/$2/$3')">
       </div>
-      <div class="ff"><label>Tell me about your project</label><textarea placeholder="A bit about what you're planning..."></textarea></div>
-      <button class="btn btn-gold" style="width:100%;text-align:center">Send Enquiry</button>
+      
+      <div class="ff"><label>Tell me about your project</label><textarea name="Message" placeholder="A bit about what you're planning..." required></textarea></div>
+      
+      <button type="submit" class="btn btn-gold" style="width:100%; text-align:center">Send Enquiry</button>
       <p class="form-note">By submitting you agree to our <a onclick="goTo('terms')">Terms &amp; Conditions</a></p>
-    </div>
+    </form>
   </div>
 </div>
 
