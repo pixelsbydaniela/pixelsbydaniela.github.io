@@ -153,7 +153,36 @@
     .info-box{background:rgba(255,255,255,.02);border:1px solid var(--border);padding:28px 32px}
 
     /* ARCHIVE PAGE */
-    .arch-hero{min-height:55vh;background:linear-gradient(160deg,#0d0b09 0%,#171108 100%);display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding:80px 32px}
+    .arch-hero {
+      min-height:55vh;
+      background:linear-gradient(160deg,#0d0b09 0%,#171108 100%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+      padding:80px 32px;
+      
+      /* Pure cinematic entrance animation */
+      opacity: 0;
+      transform: translateY(30px);
+      animation: archivePanIn 1.3s cubic-bezier(0.215, 0.610, 0.355, 1) forwards;
+      animation-delay: 0.15s;
+    }
+    
+    /* Smooth fluid fade and rise keyframe sequence */
+    @keyframes archivePanIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
     .arch-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(184,147,90,.055) 0%,transparent 68%)}
     .arch-badge{font-size:9.5px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(184,147,90,.28);padding:5px 16px;margin-bottom:26px;display:inline-block}
     .hiw{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;padding:72px 40px;max-width:960px;margin:0 auto}
