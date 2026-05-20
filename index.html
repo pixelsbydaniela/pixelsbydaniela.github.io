@@ -304,22 +304,80 @@
 
 
 <!-- ═══ HOME ═══ -->
-<div id="page-home" class="page active">
+<div class="arch-band">
+    <div class="arch-band-inner" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
+      <div class="arch-text" style="flex: 1.5; min-width: 300px;">
+        <div class="tag">Launching Soon</div>
+        <h2>Introducing <em>The Archive</em></h2>
+        <p>With vintage camcorder rentals for your most cinematic memories. Delivered to your door via Pargo. Shot on tape. Warm, grainy, and real.</p>
+        <button class="btn btn-outline" onclick="goTo('archive')">Explore The Archive</button>
+      </div>
+      <div class="arch-logo" style="flex: 1; min-width: 250px; text-align: center;">
+        <img src="Logo_Transparent_Negative.png" alt="The Archive">
+      </div>
+    </div>
+  </div> 
+  <div class="section">
+    <p class="sec-label">Selected Work</p>
+    <h2 class="sec-title">Stories worth<br><em>telling twice</em></h2>
+    <div class="divider"></div>
 
-  <div class="hero">
-    <div class="hero-bg">
-      <!-- ADD YOUR HERO IMAGE: upload hero.jpg to your images/ folder on GitHub, then uncomment the line below -->
-      <img src="Hero-shot.jpg" alt="Pixels by Daniela Portfolio Background" style="width: 100%; height: 100%; object-fit: cover; object-position: center 15%;">
+    <div class="home-grid">
+      <div class="gi" onclick="goTo('work')">
+        <img src="wedding_hands.jpg" alt="Weddings">
+        <div class="gi-ov"><span class="gi-lbl">Weddings</span></div>
+      </div>
+      <div class="gi" onclick="goTo('work')">
+        <img src="Morgan-Rooftop.jpg" alt="Portraits">
+        <div class="gi-ov"><span class="gi-lbl">Portraits</span></div>
+      </div>
+      <div class="gi" onclick="goTo('work')">
+        <img src="Family_Shoot.jpg" alt="Family">
+        <div class="gi-ov"><span class="gi-lbl">Family</span></div>
+      </div>
     </div>
-    <div class="hero-content">
-      <p class="eyebrow">Cape Town · South Africa · Available Worldwide</p>
-      <h1 class="hero-title">Pixels by<br><em>Daniela</em></h1>
-      <p class="hero-sub">For brands, property, weddings and you</p>
-      <button class="btn btn-outline" onclick="goTo('work')">View Work</button>
+
+    <div class="mt-36 tc">
+      <button class="btn btn-ghost" onclick="goTo('work')">View All Work →</button>
     </div>
-    <div class="scroll-hint">Scroll</div>
   </div>
 
+  <div class="section" style="padding-top:0">
+    <p class="sec-label">What I Do</p>
+    <h2 class="sec-title">Photography &amp; Video<br><em>Services</em></h2>
+    <div class="divider"></div>
+    <div class="sgrid mt-36">
+      <div class="sc" onclick="goTo('services')">
+        <div class="sc-num">01</div>
+        <div class="sc-name">Wedding Photography</div>
+        <div class="sc-desc">Your day, documented with intention. Full-day and half-day coverage, fully edited online gallery, and a timeline that keeps everything running smoothly.</div>
+        <div class="sc-from">From R9,000</div>
+      </div>
+      <div class="sc" onclick="goTo('services')">
+        <div class="sc-num">02</div>
+        <div class="sc-name">Portrait Sessions</div>
+        <div class="sc-desc">Individuals, couples, families, and brands. Relaxed and guided sessions that bring out who you actually are — not a posed version of it.</div>
+        <div class="sc-from">From R1,500</div>
+      </div>
+      <div class="sc" onclick="goTo('services')">
+        <div class="sc-num">03</div>
+        <div class="sc-name">Real Estate Photography</div>
+        <div class="sc-desc">Professional property photography with 24–48 hour turnaround. Trusted by agents across Cape Town for consistency, quality, and speed.</div>
+        <div class="sc-from">From R1,700</div>
+      </div>
+      <div class="sc" onclick="goTo('services')">
+        <div class="sc-num">04</div>
+        <div class="sc-name">Video &amp; Reels</div>
+        <div class="sc-desc">Short-form and long-form video for brands, events, and personal projects. Shot with a cinematic eye and delivered ready to post.</div>
+        <div class="sc-from">From R1,000</div>
+      </div>
+    </div>
+    <div class="mt-36 tc">
+      <button class="btn btn-gold" onclick="goTo('services')">View All Services</button>
+    </div>
+  </div>
+</div>
+      
   <!-- Selected Work -->
   <div class="section">
     <p class="sec-label">Selected Work</p>
@@ -386,20 +444,7 @@
     </div>
   </div>
 
-  <!-- Archive CTA Band with logo -->
-  <div class="arch-band">
-    <div class="arch-band-inner" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
-        
-        <div class="arch-text" style="flex: 1.5; min-width: 300px;">
-          <div class="tag">Launching Soon</div>
-          <h2>Introducing <em>The Archive</em></h2>
-          <p>With vintage camcorder rentals for your most cinematic memories. Delivered to your door via Pargo. Shot on tape. Warm, grainy, and real.</p>
-          <button class="btn btn-outline" onclick="goTo('archive')">Explore The Archive</button>
-        </div>
-
-        <div class="arch-logo" style="flex: 1; min-width: 250px; text-align: center;">
-          <img src="Logo_Transparent_Negative.png" alt="The Archive">
-        </div>
+ 
 
       </div>
   </div>
