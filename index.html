@@ -659,7 +659,7 @@
 
 
 <!-- ═══ ABOUT ═══ -->
-<div id="page-about" class="page">
+7<div id="page-about" class="page">
   <div class="about-grid">
     <div class="about-img">
       <img src="dani-profile.jpg" alt="Daniela" style="width:100%; height:100%; min-height:500px; object-fit:cover; display:block;">
@@ -705,6 +705,9 @@
 <div class="arch-band arch-band-animated">
   <div class="arch-band-inner" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
       
+      <div class="arch-band arch-lazy-load">
+  <div class="arch-band-inner" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px;">
+      
       <div class="arch-text" style="flex: 1.5; min-width: 300px;">
         <div class="tag">Launching Soon</div>
         <h2>Introducing <em>The Archive</em></h2>
@@ -717,6 +720,42 @@
       </div>
   </div>
 </div>
+
+<style>
+  .arch-band {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.2s cubic-bezier(0.215, 0.610, 0.355, 1), 
+                transform 1.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+  }
+
+  /* Automatically slips into place on scroll trigger */
+  .arch-band.pan-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const targetElement = document.querySelector(".arch-lazy-load");
+
+    if (targetElement) {
+      const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("pan-active");
+            scrollObserver.unobserve(entry.target); // Maintains premium layout position
+          }
+        });
+      }, {
+        threshold: 0.15 // Activates beautifully when 15% of the logo appears
+      });
+
+      scrollObserver.observe(targetElement);
+    }
+  });
+</script>
 
 <div id="page-contact" class="page">
   <div class="contact-wrap">
