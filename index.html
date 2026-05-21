@@ -294,7 +294,7 @@
       from { opacity: 0; transform: translateY(30px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-    .arch-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center,rgba(184,147,90,.055) 0%,transparent 68%); }
+    .arch-hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center,rgba(184,147,90,.055) 0%,transparent 68%); pointer-events: none; }
     .arch-badge { font-size: 9.5px; letter-spacing: .4em; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(184,147,90,.28); padding: 5px 16px; margin-bottom: 26px; display: inline-block; }
 
     /* HOW IT WORKS */
@@ -678,7 +678,7 @@
 <!-- ═══ THE ARCHIVE ═══ -->
 <div id="page-archive" class="page">
   <div class="arch-hero">
-    <div>
+    <div style="position:relative;z-index:1">
       <div class="arch-badge">The Archive · Camcorder Rental · Cape Town</div>
       <h1 style="font-family:var(--font-d);font-size:clamp(48px,9vw,92px);font-weight:300;color:var(--cream);line-height:1;margin-bottom:18px">Your memories<br><em style="font-style:italic;color:var(--cream2)">deserve film.</em></h1>
       <p style="font-size:14.5px;font-weight:300;color:var(--cream2);max-width:460px;margin:0 auto 32px">Vintage Sony camcorder rentals delivered to your nearest Pargo point — warm, grainy, and real.</p>
