@@ -1157,7 +1157,7 @@
     document.querySelectorAll('.nav-links a[data-page]').forEach(a => {
       a.classList.toggle('active', a.dataset.page === page);
     });
-    history.pushState(null, '', '#' + page);
+    history.replaceState(null, '', '#' + page);
   }
 
   function toggleMenu() {
